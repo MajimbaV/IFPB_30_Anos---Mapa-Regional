@@ -11,6 +11,6 @@ Este repositório tem como objetivo desenvolver um site apresentando o mapa regi
 
 ## **Orientadores**
 - Antônio Ricart Jacinto de Oliveira Medeiros
-- Ildegarte Elouise Alves
+- Ildegarde Elouise Alves
 
 #### 3° INTIN - 2024
