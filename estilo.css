@@ -5,7 +5,6 @@ body {
     height: 150vh;
  }
  
- 
  .logo {
     position: relative;
     width: 60px;
@@ -13,8 +12,7 @@ body {
     left: 80px;
     top: 50px;
  }
- 
- 
+
  h1{
     position: relative;
     color:white;      
@@ -23,3 +21,42 @@ body {
     font-size: large;
  }
  
+ h2{
+   color:white;
+   position: relative;
+   left: 200px;
+   top: -50px;
+   font-size: large;
+}
+
+p{
+   color:white;
+   position: relative;
+   left: 120px;
+}
+
+.menu ul {
+   background-color: #3FA14C;
+   overflow: hidden;
+   text-align: center;
+   list-style-type: none;
+   margin: 0;
+   padding: 10px 20px;
+   display: flex;
+   justify-content: center;
+}
+
+.menu li {
+   margin: 0 10px;
+}
+
+.menu a {
+   font-size: 20px;
+   color: white;
+   padding: 10px 20px;
+   text-decoration: none;
+}
+
+.menu a:hover {
+   background-color: #3b9146;
+}
