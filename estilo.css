@@ -1,0 +1,25 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(44, 44, 44);
+    height: 150vh;
+ }
+ 
+ 
+ .logo {
+    position: relative;
+    width: 60px;
+    height: 70px;
+    left: 80px;
+    top: 50px;
+ }
+ 
+ 
+ h1{
+    position: relative;
+    color:white;      
+    left: 200px;
+    top: -32px;
+    font-size: large;
+ }
+ 
