@@ -2,7 +2,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: rgb(44, 44, 44);
-    height: 150vh;
+    max-height: 150vh;
  }
  
  .logo {
@@ -59,4 +59,20 @@ p{
 
 .menu a:hover {
    background-color: #3b9146;
+}
+
+#container-mapa{
+   text-align: center;
+   padding: 2rem;
+}
+
+.municipio{
+   fill: #3b9146;
+   stroke: white;
+   stroke-width: 2px;
+   stroke-linejoin: round;
+}
+
+.municipio:hover{
+   fill: #3FA14C;
 }
