@@ -1,36 +1,37 @@
 body {
-    margin: 0;
-    padding: 0;
-    background-color: rgb(44, 44, 44);
-    max-height: 150vw;
- }
- 
- .logo {
-    position: relative;
-    width: 60px;
-    height: 70px;
-    left: 80px;
-    top: 50px;
- }
+   margin: 0 auto;
+   padding: 0;
+   background-color: rgb(44, 44, 44);
+   width: calc(100% - 400px);
+   height: 150vh;
+}
 
- h1{
-    position: relative;
-    color:white;      
-    left: 200px;
-    top: -32px;
-    font-size: large;
- }
- 
- h2{
-   color:white;
+.logo {
+   position: relative;
+   width: 60px;
+   height: 70px;
+   left: 80px;
+   top: 50px;
+}
+
+h1 {
+   position: relative;
+   color: white;
+   left: 200px;
+   top: -32px;
+   font-size: large;
+}
+
+h2 {
+   color: white;
    position: relative;
    left: 200px;
    top: -50px;
    font-size: large;
 }
 
-p{
-   color:white;
+p {
+   color: white;
    position: relative;
    left: 120px;
 }
@@ -58,7 +59,7 @@ p{
 }
 
 .menu a:hover {
-   background-color: #3b9146;
+   background-color: #31753a;
 }
 
 /* Estilização do SVG (Não substituir ao commitar*/
