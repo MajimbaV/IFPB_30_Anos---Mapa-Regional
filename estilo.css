@@ -2,7 +2,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: rgb(44, 44, 44);
-    max-height: 150vh;
+    max-height: 150vw;
  }
  
  .logo {
@@ -61,18 +61,28 @@ p{
    background-color: #3b9146;
 }
 
+/* Estilização do SVG (Não substituir ao commitar*/
+
 #container-mapa{
    text-align: center;
    padding: 2rem;
 }
 
 .municipio{
-   fill: #3b9146;
-   stroke: white;
-   stroke-width: 2px;
+   fill: #cfcfcf;
+   stroke: #7c7c7c;
+   stroke-width: 1px;
    stroke-linejoin: round;
 }
 
-.municipio:hover{
+
+.destaque{
+   fill: #3b9146;
+   stroke: white;
+   stroke-width: 1px;
+   stroke-linejoin: round;
+}
+
+.destaque:hover{
    fill: #3FA14C;
 }
