@@ -1,6 +1,6 @@
 const width = "1260"
 const height = ""
-const urlSVG = "assets/PB_Municipios_2022.svg"
+const urlSVG = "assets/PB.svg"
 const urlJSON = "assets/municipios.json"
 
 
