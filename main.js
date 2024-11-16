@@ -1,8 +1,7 @@
-const width = "1260"
+const width = "100%"
 const height = ""
 const urlSVG = "assets/PB.svg"
 const urlJSON = "assets/municipios.json"
-
 
 
 populate()
@@ -16,12 +15,46 @@ async function populate(){
 }
 
 
+let popup
+
+function mostrarPopUp(event, municipioObject){
+    if (popup){
+        let novoPopup = document.getElementById("area_"+ municipioObject.municipio)
+        if (novoPopup === popup) {
+            popup.className = "popup-escondido"
+            popup = ""
+            return
+        }
+
+        popup.className = "popup-escondido"
+
+        popup = novoPopup
+    }else{
+        popup = document.getElementById("area_"+ municipioObject.municipio)
+    }
+
+    popup.className = "popup"
+
+    let x = event.clientX + window.scrollX + 10
+    let y = event.clientY + window.scrollY - popup.offsetHeight/4
+    const containerHeight = document.getElementById("container-mapa").offsetHeight
+
+    if(y + popup.offsetHeight > containerHeight*1.6) y = y - 200
+
+        Object.assign(popup.style, {
+            left: `${x}px`,
+            top: `${y}px`
+        })
+    
+}
+
 function detalharMunicipio(municipio, data){
     for(let item of data){
         if(municipio.id.toLowerCase().includes(item.municipio.toLowerCase())){
             municipio.classList.add("destaque")
-            municipio.addEventListener("click", () => {
+            municipio.addEventListener("click", (event) => {
                 console.log(`Municipio: ${item.municipio} - ${item.uf}: ${item.quantidade} Alunos`)
+                mostrarPopUp(event, item)
             })
         }    
         }
