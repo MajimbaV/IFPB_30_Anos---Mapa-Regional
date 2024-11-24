@@ -53,7 +53,6 @@ function detalharMunicipio(municipio, data){
         if(municipio.id.toLowerCase().includes(item.municipio.toLowerCase())){
             municipio.classList.add("destaque")
             municipio.addEventListener("click", (event) => {
-                console.log(`Municipio: ${item.municipio} - ${item.uf}: ${item.quantidade} Alunos`)
                 mostrarPopUp(event, item)
             })
         }    
