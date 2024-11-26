@@ -132,6 +132,8 @@ p {
    color: white;
    left: 3px;
    padding: 0rem;
+   padding-right: 4px;
+   text-align: justify;
 }
 
 .num_alunos{
