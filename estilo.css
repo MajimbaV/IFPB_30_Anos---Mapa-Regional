@@ -74,8 +74,8 @@ p {
 }
 
 .municipio{
-   fill: #cfcfcf;
-   stroke: #7c7c7c;
+   fill: #4d4d4d;
+   stroke: #ffffff;
    stroke-width: 1px;
    stroke-linejoin: round;
 }
@@ -89,7 +89,7 @@ p {
 }
 
 .destaque:hover{
-   fill: #3FA14C;
+   fill: #2a6432;
    cursor: pointer;
 }
 
@@ -109,6 +109,8 @@ p {
    border-radius: 5%;
    margin-bottom: 15px;
    z-index: 1;
+   overflow-y: scroll;
+   overflow-x: hidden;
 }
 
 .popup img {
