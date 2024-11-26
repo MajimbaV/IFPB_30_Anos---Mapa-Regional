@@ -35,16 +35,18 @@ function mostrarPopUp(event, municipioObject){
 
     popup.className = "popup"
 
-    let x = event.clientX + window.scrollX + 10
+    let x = event.clientX + window.scrollX + 30
     let y = event.clientY + window.scrollY - popup.offsetHeight/4
     const containerHeight = document.getElementById("container-mapa").offsetHeight
+    const containerWidth = document.getElementById("container-mapa").offsetWidth
 
-    if(y + popup.offsetHeight > containerHeight*1.6) y = y - 200
+    if(y + popup.offsetHeight > containerHeight*1.35) y = y - 200
 
-        Object.assign(popup.style, {
-            left: `${x}px`,
-            top: `${y}px`
-        })
+    if(event.clientX + window.scrollX > containerWidth/2) x = x - popup.offsetWidth - 50
+    Object.assign(popup.style, {
+        left: `${x}px`,
+        top: `${y}px`
+    })
     
 }
 
