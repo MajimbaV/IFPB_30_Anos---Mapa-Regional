@@ -90,9 +90,11 @@ p {
 
 .destaque:hover{
    fill: #3FA14C;
+   cursor: pointer;
 }
 
 .popup {
+   position: absolute;
    width: 340px;
    height: 560px;
    padding: 5px;
@@ -106,6 +108,7 @@ p {
    margin: 0 auto;
    border-radius: 5%;
    margin-bottom: 15px;
+   z-index: 1;
 }
 
 .popup img {
